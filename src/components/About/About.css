@@ -1,0 +1,60 @@
+/* General About Section Styles */
+.about {
+    padding: 100px 20px; /* Adds space around the section */
+    background-color: #f8faf8;
+    scroll-margin-top: 80px; /* Prevents fixed header overlap */
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #0a2642;
+    margin-bottom: 20px;
+    text-align: center; /* Center aligns heading */
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Skills List */
+.skills-list {
+    margin-top: 20px;
+    padding-left: 20px; /* Adds indent to list */
+    list-style-type: disc;
+    color: #0a2642;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr 1fr; /* Two-column layout for larger screens */
+        gap: 40px;
+    }
+
+    .about h2 {
+        font-size: 3rem; /* Larger heading for wider screens */
+    }
+
+    .skills-list {
+        font-size: 1.2rem; /* Slightly larger font for better readability */
+    }
+}
